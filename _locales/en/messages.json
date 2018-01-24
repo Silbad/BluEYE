@@ -1,0 +1,38 @@
+{
+    "BluEYEName": {
+        "message": "BluEYE",
+        "description": "Name of the extension"
+    },
+    "BluEYEDescription": {
+        "message": "Extension for applying a color filter to limit exposure to blue light, for example",
+        "description": "Description of the extension"
+    },
+    "BluEYEFiltre": {
+        "message": "<span id=\"enabled-value\" class=\"text-strong\">Inactive</span> filter",
+        "description": "Filter label of the form"
+    },
+    "BluEYEType": {
+        "message": "Type",
+        "description": "Type label of the form"
+    },
+    "BluEYEFrequence": {
+        "message": "Frequency",
+        "description": "Frequency label of the form"
+    },
+    "BluEYEIntensite": {
+        "message": "Intensity",
+        "description": "Intensity label of the form"
+    },
+    "BluEYENoirEtBlanc": {
+        "message": "Black & White",
+        "description": "Black & White label of the form"
+    },
+    "BluEYEUniquementLaNuit": {
+        "message": "Only at night",
+        "description": "Only at night label of the form"
+    },
+    "BluEYEPermanent": {
+        "message": "Permanent",
+        "description": "Permanent label of the form"
+    }
+}

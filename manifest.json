@@ -1,0 +1,29 @@
+{
+	"manifest_version": 2,
+	"name": "__MSG_BluEYEName__",
+	"version": "1.0.0",
+	"description": "__MSG_BluEYEDescription__",
+	"homepage_url": "https://github.com/Silbad/BluEYE",
+	"default_locale": "en",
+	"icons": {
+		"48": "icons/logo-48.png",
+		"96": "icons/logo@2x.png"
+	},
+	"permissions": ["storage", "geolocation", "activeTab"],
+	"developer": {
+		"name": "Silbad",
+		"url": "https://github.com/Silbad/BluEYE"
+	},
+	"browser_action": {
+		"browser_style": true,
+		"default_icon": "icons/logo@2x.png",
+		"default_title": "BluEYE",
+		"default_popup": "app/popup.htm"
+	},
+	"content_scripts": [
+      {
+      	"matches": ["<all_urls>"],
+        "js": ["js/moment.js", "js/suncalc.js", "app/filtre.js"]
+      }
+    ]
+}

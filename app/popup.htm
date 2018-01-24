@@ -1,0 +1,73 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>BluEYE</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link rel="stylesheet" href="./popup-min.css"/>
+        <script src="./../js/jquery.min.js"></script>
+        <script src="./../js/suncalc.js"></script>
+        <script src="./../js/moment.js"></script>
+        <script src="./popup.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="container-wheel">
+                <div class="wheel">
+                    <div class="sun">
+                        <i class="fa fa-circle" aria-hidden="true"></i>
+                    </div>
+                    <div class="moon">
+                        <i class="fa fa-circle" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="skyline"></div>
+                <div class="infos full-center">
+                    <div class="infos-loader">
+                        <i class="fa fa-cog fa-spin fa-3x fa-fw"></i>
+                    </div>
+                    <div class="infos-data">
+                        <div class="sunrise-sunset">
+                            <div>
+                                <span id="start"></span>
+                            </div>
+                            <div id="datetime"></div>
+                            <div>
+                                <span id="finish"></span>
+                            </div>
+                        </div>
+                        <div class="filtre">
+                            <div>
+                                <input id="blueye-enabled" type="checkbox" value="1" /> <label for="blueye-enabled"><span id="filtre"></span></label>
+                            </div>
+                            <div class="filtre-type">
+                                <label for="blueye-type"><span id="type"></span> : </label>
+                                <select id="blueye-type">
+                                    <option value="1977">1977</option>
+                                    <option value="Aden">Aden</option>
+                                    <option value="Amaro">Amaro</option>
+                                    <option value="sepia">Sepia</option>
+                                    <option value="grayscale"></option>
+                                </select>
+                            </div>
+                            <div class="filtre-frequency">
+                                <label for="blueye-frequency"><span id="frequence"></span> : </label>
+                                <select id="blueye-frequency">
+                                    <option value="night"></option>
+                                    <option value="always"></option>
+                                </select>
+                            </div>
+                            <div class="filtre-intensity" style="visibility: hidden;">
+                                <label for="blueye-intensity"><span id="intensite"></span> : </label><input id="blueye-intensity" type="range" min="0" max="100" step="1" value="0" /> <span class="text-strong" id="intensity-value">0</span> %
+                            </div>
+                        </div>
+                        <div class="location">
+                            <span id="location" class="text-strong"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

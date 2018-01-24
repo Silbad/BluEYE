@@ -1,0 +1,38 @@
+{
+    "BluEYEName": {
+        "message": "BluEYE",
+        "description": "Nom de l'extension"
+    },
+    "BluEYEDescription": {
+        "message": "Extension pour appliquer un filtre sur les couleurs pour limiter notamment l'exposition à la lumière bleue",
+        "description": "Description de l'extension"
+    },
+    "BluEYEFiltre": {
+        "message": "Filtre <span id=\"enabled-value\" class=\"text-strong\">inactif</span>",
+        "description": "Label filtre du formulaire"
+    },
+    "BluEYEType": {
+        "message": "Type",
+        "description": "Label type du formulaire"
+    },
+    "BluEYEFrequence": {
+        "message": "Fréquence",
+        "description": "Label fréquence du formulaire"
+    },
+    "BluEYEIntensite": {
+        "message": "Intensité",
+        "description": "Label intensité du formulaire"
+    },
+    "BluEYENoirEtBlanc": {
+        "message": "Noir & Blanc",
+        "description": "Label Noir & Blanc du formulaire"
+    },
+    "BluEYEUniquementLaNuit": {
+        "message": "Uniquement la nuit",
+        "description": "Label Uniquement la nuit du formulaire"
+    },
+    "BluEYEPermanent": {
+        "message": "Permanent",
+        "description": "Label Permanent du formulaire"
+    }
+}

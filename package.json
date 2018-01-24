@@ -1,0 +1,23 @@
+{
+  "name": "BluEYE",
+  "version": "1.0.0",
+  "description": "Extension for applying a color filter to limit exposure to blue light, for example",
+  "repository": "https://github.com/Silbad/BluEYE",
+  "author": "Silbad",
+  "license": "MPL-2.0",
+  "dependencies": {
+    "bootstrap": "4.0.0-beta.2",
+    "font-awesome": "^4.7.0",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "jquery": "^3.2.1",
+    "moment": "^2.20.1",
+    "normalize.css": "^7.0.0",
+    "popper.js": "^1.12.9",
+    "suncalc": "^1.8.0",
+    "syncy": "^2.2.2",
+    "web-ext": "^2.2.2"
+  }
+}
