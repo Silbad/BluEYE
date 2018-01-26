@@ -96,6 +96,12 @@ select {
                 text-shadow: 0 0 12px $blueye-white;
             }
         }
+        .version {
+            position: absolute;
+            bottom: 2px;
+            right: 4px;
+            font-size: 0.6rem;
+        }
         .infos {
             position: absolute;
             top: 100px;

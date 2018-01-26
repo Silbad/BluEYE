@@ -1,6 +1,6 @@
 {
   "name": "BluEYE",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Extension for applying a color filter to limit exposure to blue light, for example",
   "repository": "https://github.com/Silbad/BluEYE",
   "author": "Silbad",

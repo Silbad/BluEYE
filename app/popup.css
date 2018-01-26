@@ -4238,6 +4238,11 @@ select {
       .container .container-wheel .moon .fa-circle {
         font-size: 45px;
         text-shadow: 0 0 12px #FFF; }
+    .container .container-wheel .version {
+      position: absolute;
+      bottom: 2px;
+      right: 4px;
+      font-size: 0.6rem; }
     .container .container-wheel .infos {
       position: absolute;
       top: 100px;

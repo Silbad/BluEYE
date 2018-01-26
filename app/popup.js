@@ -1,5 +1,9 @@
 $(function() {
 
+    // set version
+    var manifest = chrome.runtime.getManifest();
+    $('.version').html('BluEYE ' + manifest.version);
+
     // set locales
     $('#filtre').html(browser.i18n.getMessage('BluEYEFiltre'));
     $('#type').html(browser.i18n.getMessage('BluEYEType'));
@@ -36,7 +40,7 @@ $(function() {
         getType.then(function(item) {
             if (item.type != undefined) {
                 $('#blueye-type').val(item.type);
-                if ((item.type == 'sepia') || (item.type == 'grayscale')) {
+                if ((item.type == 'grayscale') || (item.type == 'sepia')) {
                     $('.filtre-intensity').css('visibility', 'visible');
                 } else {
                     $('.filtre-intensity').css('visibility', 'hidden');
@@ -108,7 +112,7 @@ $(function() {
             $('.moon').css('right', '178px').show();
             $('.sun').css('left', '178px').hide();
             if ((now <= last) && (now > sunset)) {
-                fract = Math.round((12 / ((last - sunset) + parseInt(sunrise))) * (now - sunset));
+                fract = Math.round((12 / ((last - sunset) + parseInt(sunrise))) * (parseInt(now - sunset) + 1));
             } else {
                 fract = Math.round((12 / ((last - sunset) + parseInt(sunrise))) * ((last - sunset) + parseInt(now)));
                 if (parseInt(now) == '0') {
@@ -182,7 +186,7 @@ $(function() {
     });
 
     $('#blueye-type').on('change', function() {
-        if (($(this).val() == 'sepia') || ($(this).val() == 'grayscale')) {
+        if (($(this).val() == 'grayscale') || ($(this).val() == 'sepia') || ($(this).val() == 'nvg')) {
             $('.filtre-intensity').css('visibility', 'visible');
         } else {
             $('.filtre-intensity').css('visibility', 'hidden');

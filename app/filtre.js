@@ -19,12 +19,8 @@ gettingItem.then(function(item) {
                 document.body.style.filter = 'grayscale(' + item.intensity + '%)';
             } else if (item.type == 'sepia') {
                 document.body.style.filter = 'sepia(' + item.intensity + '%)';
-            } else if (item.type == '1977') {
-                document.body.style.filter = 'contrast(110%) brightness(110%) saturate(130%)';
-            } else if (item.type == 'Aden') {
-                document.body.style.filter = 'contrast(90%) brightness(120%) saturate(85%) hue-rotate(20deg)';
-            } else if (item.type == 'Amaro') {
-                document.body.style.filter = 'contrast(90%) brightness(110%) saturate(150%) hue-rotate(-10deg)';
+            } else if (item.type == 'nvg') {
+                document.body.style.filter = 'sepia(100%) invert(0%) hue-rotate(60deg)';
             }
         }
     }
