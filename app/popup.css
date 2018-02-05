@@ -4176,7 +4176,8 @@ body.day {
     background-color: #7EC0EE; }
   body.day .sunrise-sunset span {
     background-color: #7EC0EE;
-    color: #414243; }
+    color: #414243;
+    font-weight: bold; }
 
 body.night {
   background-color: #0d3e60;
@@ -4187,7 +4188,8 @@ body.night {
     background-color: #0d3e60; }
   body.night .sunrise-sunset span {
     background-color: #0d3e60;
-    color: #FFF; }
+    color: #FFF;
+    font-weight: bold; }
 
 .text-strong {
   font-weight: bold; }
@@ -4225,12 +4227,12 @@ select {
       margin: 0 auto;
       animation: spin-right linear normal forwards; }
     .container .container-wheel .sun {
-      color: #EDAD36;
+      color: #fef9f1;
       position: absolute;
       top: 70px; }
       .container .container-wheel .sun .fa-circle {
         font-size: 45px;
-        text-shadow: 0 0 12px #f5d394; }
+        text-shadow: 0 0 18px white; }
     .container .container-wheel .moon {
       color: #FFF;
       position: absolute;

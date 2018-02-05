@@ -137,29 +137,40 @@ $(function() {
         $('.wheel').css('animationDuration', duration);
 
         // get city name
-        $.ajax({
-            type: 'GET',
-            dataType: 'json',
-            url: 'http://nominatim.openstreetmap.org/reverse?format=json&lat='+lat+'&lon='+long+'&zoom=18&addressdetails=1',
-            data: {},
-            success: function(data) {
-                var city = data.address.village;
-                if (city == undefined) {
-                    city = data.address.town;
-                }
-                if (city == undefined) {
-                    city = data.address.city;
-                }
-                $('#location').html(city + ' (' + data.address.country + ')');
-                $('.infos-loader').hide();
-                $('.infos').removeClass('full-center').addClass('style-data');
-                $('.infos-data').show();
-            },
-            error: function () {
-                console.log('error');
+        let getAddress = browser.storage.local.get('address');
+        getAddress.then(function(item) {
+            if (item.address != undefined) {
+                $('#location').html(item.address);
+            } else {
+                $.ajax({
+                    type: 'GET',
+                    dataType: 'json',
+                    url: 'https://maps.googleapis.com/maps/api/geocode/json?latlng='+lat+','+long+'&sensor=true',
+                    //url: 'http://nominatim.openstreetmap.org/reverse?format=json&lat='+lat+'&lon='+long+'&zoom=18&addressdetails=1',
+                    //data: {},
+                    success: function(data) {
+                        console.log(data);
+                        // var city = data.address.village;
+                        // if (city == undefined) {
+                        //     city = data.address.town;
+                        // }
+                        // if (city == undefined) {
+                        //     city = data.address.city;
+                        // }
+                        // $('#location').html(city + ' (' + data.address.country + ')');
+                        var address = data.results[1].formatted_address;
+                        browser.storage.local.set({ 'address': address });
+                        $('#location').html(address);
+                    },
+                    error: function (jqXHR, textStatus, errorThrown) {
+                        console.log(jqXHR, textStatus, errorThrown);
+                    }
+                });
             }
+            $('.infos-loader').hide();
+            $('.infos').removeClass('full-center').addClass('style-data');
+            $('.infos-data').show();
         });
-
     };
 
     function error(err) {

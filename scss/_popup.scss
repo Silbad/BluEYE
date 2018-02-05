@@ -14,6 +14,7 @@ body {
             span {
                 background-color: $blueye-sky-day;
                 color: $blueye-grey;
+                font-weight: bold;
             }
         }
     }
@@ -32,6 +33,7 @@ body {
             span {
                 background-color: darken($blueye-sky-day, 50%);
                 color: $blueye-white;
+                font-weight: bold;
             }
         }
     }
@@ -79,12 +81,12 @@ select {
             animation: spin-right linear normal forwards;
         }
         .sun {
-            color: $blueye-sun;
+            color: lighten($blueye-sun, 40%);
             position: absolute;
             top: 70px;
             .fa-circle {
                 font-size: 45px;
-                text-shadow: 0 0 12px lighten($blueye-sun, 20%);
+                text-shadow: 0 0 18px lighten($blueye-sun, 60%);
             }
         }
         .moon {
