@@ -5,7 +5,7 @@ Extension for applying a color filter to limit exposure to blue light, for examp
 ![BluEYE](./screenshots/blueye_1.0.0.png)
 
 ## Geolocation API
-![Google API](https://maps.googleapis.com/maps/api/geocode/)
+![Google API](https://developers.google.com/maps/)
 
 ## Firefox Add-ons
 [https://addons.mozilla.org/fr/firefox/addon/moz-blueye/](https://addons.mozilla.org/fr/firefox/addon/moz-blueye/)
